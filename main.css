@@ -1,0 +1,61 @@
+:root {
+    --pink: #FFAAAA;
+    --white: #FFFFFF;
+    --darkPink: #801515;
+  }
+
+body{
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: monospace;
+}
+
+.content {
+    padding-top: 70px;
+    max-width: 500px;
+    margin: auto;
+    font-size: x-large;
+}
+
+ul{
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+li{
+    list-style: circle;
+}
+
+.list{
+    list-style: square;
+}
+
+#msg{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.light-theme {
+    --bg: var(--pink);
+    --fontColor: var(--darkPink);
+    --btnBg: var(--darkPink);
+    --btnFontColor: var(--white);
+  }
+  
+.dark-theme {
+    --bg: var(--darkPink);
+    --fontColor: var(--pink);
+    --btnBg: var(--white);
+    --btnFontColor: var(--darkPink);
+  }
+
+.btn {
+    position: absolute;
+    top: 40px;
+    left: 900px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+  }
